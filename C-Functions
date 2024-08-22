@@ -1,0 +1,108 @@
+#include<stdio.h>
+// basic function without arg. without return
+void info(){
+   printf("www.codeswithpankaj.com\n"); 
+}
+int main(){
+
+    // calling function
+    info();
+    info();
+
+
+
+    return 0;
+}
+
+#include<stdio.h>
+// function with arg. without return
+void user_info(int age , char name[]){
+   printf("your name is : %s\n ",name);
+   printf("your age is : %d\n ",age); 
+}
+
+void bill(int price , int gst){
+
+    int gst_amount = price*gst/100;
+    int final_price = price + gst_amount;
+    printf("\n----------bill-----------\n");
+    printf("Price : %d\n",price);
+    printf("GST : %d\n",gst);
+    printf("GST - Amount  : %d\n",gst_amount);
+    printf("MRP - Amount  : %d\n",final_price);
+
+}
+int main(){
+
+    // calling function
+    user_info(56,"joy");
+    user_info(12,"toy");
+
+    // calling function 
+    bill(1200,18);
+    bill(1800,9);
+    bill(75000,10);
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+void printSum(int a, int b) {
+    int sum = a + b;
+    printf("Sum: %d\n", sum);
+}
+
+// gst cal
+
+void gst(int price,int tax){
+
+    int gst_amount = (price*tax)/100;
+    int total_amount = price + gst_amount;
+    printf("GST Amount: %d\n", gst_amount);
+    printf("Total Amount: %d\n", total_amount);
+
+}
+
+int main() {
+    printSum(10, 20);
+    gst(100,18);
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int square(int n) {
+    return n * n;
+}
+
+float total(int number1, int number2){
+    return number1 + number2;
+}
+
+int main() {
+    int num = 4;
+    printf("Square of %d is %d\n", num, square(num));
+    printf("Total of 5 and 7 is %f\n", total(5,7));
+    return 0;
+}
+
+
+#include<stdio.h>
+// basic function without arg. with return
+int info(){
+   return 500;
+}
+int main(){
+
+    // calling function
+    int data = info();
+    printf("data : %d",data);
+
+
+
+    return 0;
+}
